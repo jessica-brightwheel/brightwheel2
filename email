@@ -1,261 +1,1083 @@
-Original Message
-Message ID	<CAMAgWjra4=puTkWnnB+wYoupZR3=ES1Mk=OqRyL-cDf35D4Y+A@mail.gmail.com>
-Created at:	Thu, Aug 1, 2019 at 12:41 PM (Delivered after 12 seconds)
-From:	Claire Lee <claire@mybrightwheel.com>
-To:	Jessica Davison <jessica@mybrightwheel.com>
-Subject:	Fwd: ⚠️ Update: Please update your devices using TLS 1.0/1.1
-SPF:	PASS with IP 2607:f8b0:4864:20:0:0:0:e2b Learn more
-DKIM:	'PASS' with domain mybrightwheel-com.20150623.gappssmtp.com Learn more
-
-
-Download Original	Copy to clipboard	
-Delivered-To: jessica@mybrightwheel.com
-Received: by 2002:a67:e117:0:0:0:0:0 with SMTP id d23csp7966013vsl;
-        Thu, 1 Aug 2019 12:41:53 -0700 (PDT)
-X-Google-Smtp-Source: APXvYqw7R9OEGkcsMjTZLOJpwbUYIpqEOQtkf/iPWg4WXFVuSwKllCfmYA1HW8OZnM7iUJ+JnpSE
-X-Received: by 2002:a9f:3871:: with SMTP id q46mr85821610uad.50.1564688513634;
-        Thu, 01 Aug 2019 12:41:53 -0700 (PDT)
-ARC-Seal: i=1; a=rsa-sha256; t=1564688513; cv=none;
+Delivered-To: claire@mybrightwheel.com
+Received: by 2002:ab0:764d:0:0:0:0:0 with SMTP id s13csp1301252uaq;
+        Fri, 2 Aug 2019 12:26:49 -0700 (PDT)
+X-Received: by 2002:aed:2b01:: with SMTP id p1mr98569793qtd.33.1564773769038;
+        Fri, 02 Aug 2019 12:22:49 -0700 (PDT)
+X-Google-Smtp-Source: APXvYqzy8HoeChg3oRGukWWZZV8Et5Rj0YCTx/4tLRS1gvOTqntLPjIB9riB+qYHhbhvFN40iRjI
+X-Received: by 2002:aed:2b01:: with SMTP id p1mr98568653qtd.33.1564773749287;
+        Fri, 02 Aug 2019 12:22:29 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1564773749; cv=none;
         d=google.com; s=arc-20160816;
-        b=UaNuW1J7+lYoq5JcbCm6Xd8mN/W7tmWOgEFgwm6u5kBCgjIobubF1xtjxTOPOJfm38
-         ys0kISDrlFlOIZfcmUBWRqAw4PXvgrhhmSbp4Rnbl4NpatcYpIAGO+QtQCVmCmzXkxwK
-         J04byOTiJnfTkwe77B1Wvtew27RUoce9M2pcGWuBhJ5vy6Qp9jjXw+HlIN2s9vnEgJdz
-         SYPYMZ/GZ6QfV0YVhdAincrQ867IRETzf6OXYYS9qZNVOjMydhGfsVvcsEwHmbiKlggH
-         awgZciprPQ7p2uGcrynicUD2U9+3RWbkR1C8+aDKhOHgKJwdIokeP1x6IttxMLnYVKjX
-         jmAw==
+        b=qVer4l1fyr4wW8nx1axPzqWztpvIJRvqN1Emeevum2PtE1u/E7Gap1MFiFOiG8n9nN
+         XOJVuEh7+OOasJsXTN3IYm3+tRwOSK5WtrmvBXmXqG+JCt4k2PlASH9LjXoX2cul86VA
+         r98n+d++Vz7GDkJd/PuF1JX5C53sLhNJ88IowPrSVmqOrV6T/HXK/qB6nU0RavURGGVl
+         xdZ4+plAwzO2y0F2hBwUkxQ+CtIHpCTSGXYsC0FKsa3TfK4Lw4M2nD0OV2SslSD+2bfu
+         KipGttqr6dLMXNY87oeSA0LiFCxcUQj17UVdA7suVKRp3cJbNpG+9jdQDSGqOJIHuZJv
+         YTDQ==
 ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
-        h=cc:to:subject:message-id:date:from:in-reply-to:references
-         :mime-version:dkim-signature;
-        bh=EIW8mMgbWV3ivlsS3uPTTblRCEEPYaENZW4ltb1ll+o=;
-        b=d3nTyAztxxz3ui7VZ1nPZnbsGxblEE7ikjV4zTLzqRr4KwC8xzC11tMfxh0o1wwhe7
-         C2cjgu6eW4+6UevLMvDLEk/D9ULsqN0qghPkPQ/kaU1gFLkErWdK2V24yh/yJ7/U8fax
-         xAodlHVs+7s70hh3Rtd2mk3NfdLXBkGTRhtqtjuoR5ubBdOAXainAfPWYY1tmP4AQuxN
-         u9fXKD0arpLxmGK/0V9kQIio3GL85uSC/Ghbx6CLo3l5Yd5OhSeU1pXT1acp9iS0yaP7
-         H+rdCMbl97awPFRwt/OWVMX4Qyhk470GcNb3bN9Zg1cfZ7QQQfwKfuP2Z4wZ/w1IoWmk
-         1MNQ==
+        h=content-language:thread-index:mime-version:message-id:date:subject
+         :in-reply-to:references:cc:to:from:reply-to:dkim-signature;
+        bh=9la1eA/bXL+pDlj9CuLi9AjP3rnxagzKgGFDNKiwqNw=;
+        b=oRZ376iDGsSkW9s4T0URquc+iul2K8ZfsVEo4QY8cPj3qUhD7OE/1JPg51PJqX4P8e
+         7Oo0NOYPBqEyUDq54v2UtBiJUYih3wyeM9A5Dzuxw/wVExWF0OgvtetMhIoEDpnIJtVE
+         fmu5qgsI3qdmQZt2PpoumDyk/Vv//qt4uYOY4eLfwbM6CagGcgXm5J+ZHeDsI6qpsXi3
+         pn89L3P/6LG00QiJ+UAjde3T1AQokafzbo1VznrvlMafLNyTTbaBK1qM5xbOQKeorKt5
+         pqBRwDcjc3mWtzB2humZx5Z1P+mg+sZM2vukLNi1SsdFHvkKddMnO37EV5QXhaZbLG84
+         /HIA==
 ARC-Authentication-Results: i=1; mx.google.com;
-       dkim=pass header.i=@mybrightwheel-com.20150623.gappssmtp.com header.s=20150623 header.b=UJtx830P;
-       spf=pass (google.com: domain of claire@mybrightwheel.com designates 2607:f8b0:4864:20::e2b as permitted sender) smtp.mailfrom=claire@mybrightwheel.com
-Return-Path: <claire@mybrightwheel.com>
-Received: from mail-vs1-xe2b.google.com (mail-vs1-xe2b.google.com. [2607:f8b0:4864:20::e2b])
-        by mx.google.com with ESMTPS id w2si15746359uag.160.2019.08.01.12.41.53
-        for <jessica@mybrightwheel.com>
-        (version=TLS1_3 cipher=AEAD-AES128-GCM-SHA256 bits=128/128);
-        Thu, 01 Aug 2019 12:41:53 -0700 (PDT)
-Received-SPF: pass (google.com: domain of claire@mybrightwheel.com designates 2607:f8b0:4864:20::e2b as permitted sender) client-ip=2607:f8b0:4864:20::e2b;
+       dkim=pass header.i=@optonline.net header.s=dkim-001 header.b=WfruJHFg;
+       spf=pass (google.com: domain of mscurti@optonline.net designates 167.206.4.212 as permitted sender) smtp.mailfrom=mscurti@optonline.net
+Return-Path: <mscurti@optonline.net>
+Received: from mta6.srv.hcvlny.cv.net (mta6.srv.hcvlny.cv.net. [167.206.4.212])
+        by mx.google.com with ESMTPS id 19si25564288qtr.220.2019.08.02.12.22.29
+        for <claire@mybrightwheel.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Fri, 02 Aug 2019 12:22:29 -0700 (PDT)
+Received-SPF: pass (google.com: domain of mscurti@optonline.net designates 167.206.4.212 as permitted sender) client-ip=167.206.4.212;
 Authentication-Results: mx.google.com;
-       dkim=pass header.i=@mybrightwheel-com.20150623.gappssmtp.com header.s=20150623 header.b=UJtx830P;
-       spf=pass (google.com: domain of claire@mybrightwheel.com designates 2607:f8b0:4864:20::e2b as permitted sender) smtp.mailfrom=claire@mybrightwheel.com
-Received: by mail-vs1-xe2b.google.com with SMTP id m23so49740209vso.1
-        for <jessica@mybrightwheel.com>; Thu, 01 Aug 2019 12:41:53 -0700 (PDT)
-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
-        d=mybrightwheel-com.20150623.gappssmtp.com; s=20150623;
-        h=mime-version:references:in-reply-to:from:date:message-id:subject:to
-         :cc;
-        bh=EIW8mMgbWV3ivlsS3uPTTblRCEEPYaENZW4ltb1ll+o=;
-        b=UJtx830Pj2g+v7GmjxyWEUlaEwWEJLgxqslRXEyYcCUwH0ZRHJgSOYttlPxaKsBCK1
-         IhlM2OiS+NtAC0J5HJx7Cn7pDSAxY8QLD97hmXSFS7AFYRbJEnQdeCEAzEiPoWxzVgpK
-         d3WzsMNVYwD/DyWeq4/qvXzisGmFVmCtjbaS3Do/cYX2BzQSMjknp/hEPUXRnSLsh0rV
-         wVvWZsIBrj1RF1eHWcMiiyBhE80Lk9ZX/TqpiSb/T/ptf9ps4Dh6RpVYWgnlOd8WyzPM
-         QGagfmzKRn7sSNPPLqQ1n6/qVsQ4+urxGqEfG+oUddcNCW1PXbp1cBAvz9pKesJ9C/hD
-         rVdw==
-X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
-        d=1e100.net; s=20161025;
-        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
-         :message-id:subject:to:cc;
-        bh=EIW8mMgbWV3ivlsS3uPTTblRCEEPYaENZW4ltb1ll+o=;
-        b=SFoHbhjNFAPcPzEdmcPgsCnuk/PsZpJAr7ERBLyC0HEKfeOH48lcTTIiFB2tT5wJ8f
-         A9DMkpFcnf1A9WI5D8WWy1g6XZv0KVv4M+OqCiaJbd8t1CcsCxZfQFjWvII5t3bFBZgQ
-         H0LZdoMLxEB85Pb5mYkKOiLpMrtY1xDIEo5GnSpLAhr3v3yQ3CH0WNSjdnrgxqUgdhO0
-         Bfw4rVko6UC5IKu8xUpRnQ9PupFcpV5JTCJe3uQbpQG1XX4HU7HHrZ56576oIOgyFTVv
-         V2r6GCeiK8nqkgCsTHCrF3N/snYDUATk5JMqmCtNXxq49P++ooDt86mIRQhUJVMcZCFK
-         jExQ==
-X-Gm-Message-State: APjAAAVmGva/e/63MJWQecq29iLjKs12B2sFykEAujqCLBDBYzrxJ9ft bw6fMQvB+dZprzQVvKmsg8hQtexu3cVJv9Cc111ZnuhoWTI=
-X-Received: by 2002:a67:dd85:: with SMTP id i5mr82684398vsk.220.1564688512758; Thu, 01 Aug 2019 12:41:52 -0700 (PDT)
-MIME-Version: 1.0
-References: <00a601d548a0$c98cc1f0$5ca645d0$@milestonescdc.com>
-In-Reply-To: <00a601d548a0$c98cc1f0$5ca645d0$@milestonescdc.com>
-From: Claire Lee <claire@mybrightwheel.com>
-Date: Thu, 1 Aug 2019 12:41:41 -0700
-Message-ID: <CAMAgWjra4=puTkWnnB+wYoupZR3=ES1Mk=OqRyL-cDf35D4Y+A@mail.gmail.com>
-Subject: Fwd: ⚠️ Update: Please update your devices using TLS 1.0/1.1
-To: Jessica Davison <jessica@mybrightwheel.com>
-Cc: Natalie Foote <natalie@mybrightwheel.com>
-Content-Type: multipart/mixed; boundary="000000000000fd0dee058f136e69"
-
---000000000000fd0dee058f136e69
-Content-Type: multipart/alternative; boundary="000000000000fd0deb058f136e67"
-
---000000000000fd0deb058f136e67
-Content-Type: text/plain; charset="UTF-8"
-Content-Transfer-Encoding: quoted-printable
-
-Hey Jessie! This automated reply was sent to my email,
-claire@mybrightwheel.com. Is there a way to ensure replies are sent to
-support@?
-
----------- Forwarded message ---------
-From: Danielle Kuczajda <dkuczajda@milestonescdc.com>
-Date: Thu, Aug 1, 2019 at 12:39 PM
-Subject: RE: =E2=9A=A0=EF=B8=8F Update: Please update your devices using TL=
-S 1.0/1.1
+       dkim=pass header.i=@optonline.net header.s=dkim-001 header.b=WfruJHFg;
+       spf=pass (google.com: domain of mscurti@optonline.net designates 167.206.4.212 as permitted sender) smtp.mailfrom=mscurti@optonline.net
+Return-Path: <mscurti@optonline.net>
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=optonline.net; s=dkim-001; t=1564773748; bh=9la1eA/bXL+pDlj9CuLi9AjP3rnxagzKgGFDNKiwqNw=; h=From:To:Subject:Date:Message-ID; b=WfruJHFg77hG0jHWTCsCWh9D5RN+R9rHAE1rtDgXmOVlbZDov+gSee9QT+ShXzxel
+	 R9UB7FJQ/2f8tw9tMfXc6PYpQ/S5pXAsz0d64SV6xpw+uyFKOdpntNTTzBGSFHrmxP
+	 3+8741NE0i2MSPlyHipAqeO9RAhi3haUMUEJB6BLx5jWOE6uQmUXzjr1NTOppTat7a
+	 gXE7z+shAYcClEa7bGdY2xAbg9/mlzaW4rznRZzqKvXNfIHFnnSWgwQHMf8X0LeNw7
+	 yPzxteInuDMfDX6RT5lujy58xQTTr1UlQsXfEO0jzTpVtve6gDOpxerin3BRFbhqBi
+	 0ONystQpkv74Q==
+X-Content-Analysis: v=2.1 cv=XNTNMlVE c=1 sm=1 tr=0 a=CxRje63zR9TtVpqcYgb36Q==:117 a=CxRje63zR9TtVpqcYgb36Q==:17 a=L9H7d07YOLsA:10 a=9cW_t1CCXrUA:10 a=s5jvgZ67dGcA:10 a=jpOVt7BSZ2e4Z31A5e1TngXxSK0=:19 a=DAwyPP_o2Byb1YXLmDAA:9 a=o1OHuDzbAAAA:8 a=2qhvx6DuAAAA:8 a=xRfjoxBpAAAA:8 a=Tj80UV6oAAAA:8 a=vkzt1hd8AAAA:8 a=CKC8RYWKu_sL5doj-KgA:9 a=QEXdDO2ut3YA:10 a=PDBfuU_j7HgA:10 a=xaU4fVdLobcA:10 a=vxJTelG140IA:10 a=Hs4oBmlPdyUA:10 a=yMhMjlubAAAA:8 a=SSmOFEACAAAA:8 a=31SfMhVc7X3Hec6V6Q8A:9 a=gKO2Hq4RSVkA:10 a=UiCQ7L4-1S4A:10 a=hTZeC7Yk6K0A:10 a=frz4AuCg-hUA:10 a=5YQ6H4ZxyGn-KoBYtt8s:22 a=URyPxwD4C6llPP_2cmfQ:22 a=4plUlNce3Gdv3FjnGo9M:22 a=peAlJprxKlS18n7ucK9D:22 a=L4A7PYw-9xXLhOJXUMwz:22
+Received: from [174.44.32.90] ([174.44.32.90:65386] helo=DESKTOP185H0BM) by mta2.srv.hcvlny.cv.net (envelope-from <mscurti@optonline.net>) (ecelerity 3.6.9.48312 r(Core:3.6.9.0)) with ESMTP id 1D/C4-05532-47D844D5; Fri, 02 Aug 2019 15:22:28 -0400
+Reply-To: <mscurti@optonline.net>
+From: Marilu Scurti <mscurti@optonline.net>
 To: <claire@mybrightwheel.com>
+Cc: John Scurti <reliablecare@optonline.net>, "'Karen Wizeman'" <kw.ttnewcity@verizon.net>
+References: <cc17a212-9711d171-1564688308-23092744736@brightwheel-4922e5bfba99.intercom-mail.com> <001301d54940$2dc44630$894cd290$@verizon.net>
+In-Reply-To: <001301d54940$2dc44630$894cd290$@verizon.net>
+Subject: FW: ⚠️ Update: Please update your devices using TLS 1.0/1.1
+Date: Fri, 2 Aug 2019 15:22:28 -0400
+Message-ID: <011701d54967$9fa75360$def5fa20$@optonline.net>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="----=_NextPart_000_0118_01D54946.189AE380"
+X-Mailer: Microsoft Outlook 16.0
+Thread-Index: AQFCNHsXWcm6B2LCT8iLPWBRwyBCRwHyvWZgp/7P1lA=
+Content-Language: en-us
 
+------=_NextPart_000_0118_01D54946.189AE380
+Content-Type: multipart/related; boundary="----=_NextPart_001_0119_01D54946.189AE380"
 
-Hello and thank you for your email,
-            I am currently out of the office on maternity leave and plan on
-returning October 14th. While I=E2=80=99m gone you=E2=80=99ll be seeing muc=
-h more of our
-former Program Directors, Jenny Abid and Kelly Mertes. You will also notice
-some of the teachers stepping into the office a couple nights a week to hel=
-p
-out.
-While I=E2=80=99m gone if you have center specific questions, please call t=
-he
-center or contact Ashley at atelman@milestonescdc.com
-<mailto:atelman@milestonescdc.com>  or Teresa at thauck@milestonescdc.com
-<mailto:thauck@milestonescdc.com> . For questions regarding billing,
-transitions, or enrollment please contact Kelly Mertes at
-kmertes@milestonescdc.com <mailto:kmertes@milestonescdc.com> .
+------=_NextPart_001_0119_01D54946.189AE380
+Content-Type: multipart/alternative; boundary="----=_NextPart_002_011A_01D54946.189AE380"
 
-I look forward to seeing everyone when I return.
-Thank you,
-Danielle Kuczajda
-
-Assistant Director
-Milestones Child Development Center - Belmont
-Phone: 616.361.0191 ext. 12
-Fax: 616.361.0269
-E-mail:  <mailto:dkuczajda@milestonescdc.com> dkuczajda@milestonescdc.com
-
-<https://www.facebook.com/Milestones-Child-Development-Center-1808530986567=
-6
-1/?fref=3Dts
-<https://www.facebook.com/Milestones-Child-Development-Center-1808530986567=
-61/?fref=3Dts>>
-  <https://twitter.com/milestones_kids>
-
-
-
---=20
-
-Claire Lee
-
-<https://mybrightwheel.com/>
-
---000000000000fd0deb058f136e67
-Content-Type: text/html; charset="UTF-8"
+------=_NextPart_002_011A_01D54946.189AE380
+Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
-<div dir=3D"ltr">Hey Jessie! This automated reply was sent to my email, <a =
-href=3D"mailto:claire@mybrightwheel.com">claire@mybrightwheel.com</a>. Is t=
-here a way to ensure replies are sent to support@?<br><br><div class=3D"gma=
-il_quote"><div dir=3D"ltr" class=3D"gmail_attr">---------- Forwarded messag=
-e ---------<br>From: <strong class=3D"gmail_sendername" dir=3D"auto">Daniel=
-le Kuczajda</strong> <span dir=3D"auto">&lt;<a href=3D"mailto:dkuczajda@mil=
-estonescdc.com">dkuczajda@milestonescdc.com</a>&gt;</span><br>Date: Thu, Au=
-g 1, 2019 at 12:39 PM<br>Subject: RE: =E2=9A=A0=EF=B8=8F Update: Please upd=
-ate your devices using TLS 1.0/1.1<br>To:  &lt;<a href=3D"mailto:claire@myb=
-rightwheel.com">claire@mybrightwheel.com</a>&gt;<br></div><br><br>Hello and=
- thank you for your email,<br>
-=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 I am currently out of the office =
-on maternity leave and plan on<br>
-returning October 14th. While I=E2=80=99m gone you=E2=80=99ll be seeing muc=
-h more of our<br>
-former Program Directors, Jenny Abid and Kelly Mertes. You will also notice=
-<br>
-some of the teachers stepping into the office a couple nights a week to hel=
-p<br>
-out.<br>
-While I=E2=80=99m gone if you have center specific questions, please call t=
-he<br>
-center or contact Ashley at <a href=3D"mailto:atelman@milestonescdc.com" ta=
-rget=3D"_blank">atelman@milestonescdc.com</a><br>
-&lt;mailto:<a href=3D"mailto:atelman@milestonescdc.com" target=3D"_blank">a=
-telman@milestonescdc.com</a>&gt;=C2=A0 or Teresa at <a href=3D"mailto:thauc=
-k@milestonescdc.com" target=3D"_blank">thauck@milestonescdc.com</a><br>
-&lt;mailto:<a href=3D"mailto:thauck@milestonescdc.com" target=3D"_blank">th=
-auck@milestonescdc.com</a>&gt; . For questions regarding billing,<br>
-transitions, or enrollment please contact Kelly Mertes at<br>
-<a href=3D"mailto:kmertes@milestonescdc.com" target=3D"_blank">kmertes@mile=
-stonescdc.com</a> &lt;mailto:<a href=3D"mailto:kmertes@milestonescdc.com" t=
-arget=3D"_blank">kmertes@milestonescdc.com</a>&gt; . <br>
-<br>
-I look forward to seeing everyone when I return.<br>
-Thank you,<br>
-Danielle Kuczajda<br>
-<br>
-Assistant Director<br>
-Milestones Child Development Center - Belmont<br>
-Phone: 616.361.0191 ext. 12<br>
-Fax: 616.361.0269<br>
-E-mail:=C2=A0 &lt;mailto:<a href=3D"mailto:dkuczajda@milestonescdc.com" tar=
-get=3D"_blank">dkuczajda@milestonescdc.com</a>&gt; <a href=3D"mailto:dkucza=
-jda@milestonescdc.com" target=3D"_blank">dkuczajda@milestonescdc.com</a> <b=
-r>
-<br>
-&lt;<a href=3D"https://www.facebook.com/Milestones-Child-Development-Center=
--180853098656761/?fref=3Dts" rel=3D"noreferrer" target=3D"_blank">https://w=
-ww.facebook.com/Milestones-Child-Development-Center-18085309865676<br>
-1/?fref=3Dts</a>&gt;=C2=A0 =C2=A0 &lt;<a href=3D"https://twitter.com/milest=
-ones_kids" rel=3D"noreferrer" target=3D"_blank">https://twitter.com/milesto=
-nes_kids</a>&gt; <br>
-<br>
-</div><br clear=3D"all"><div><br></div>-- <br><div dir=3D"ltr" class=3D"gma=
-il_signature" data-smartmail=3D"gmail_signature"><div dir=3D"ltr"><div><div=
- dir=3D"ltr"><div><div dir=3D"ltr"><div dir=3D"ltr"><span><p dir=3D"ltr" st=
-yle=3D"line-height:1.656;margin-top:0pt;margin-bottom:0pt"><span style=3D"f=
-ont-size:11pt;font-family:Avenir;color:rgb(68,68,68);background-color:trans=
-parent;font-weight:700;vertical-align:baseline;white-space:pre-wrap">Claire=
- Lee</span></p><p dir=3D"ltr" style=3D"line-height:1.38;margin-top:0pt;marg=
-in-bottom:0pt"><span style=3D"font-size:12pt;font-family:Avenir;color:rgb(1=
-7,85,204);background-color:transparent;vertical-align:baseline;white-space:=
-pre-wrap"><a href=3D"https://mybrightwheel.com/" target=3D"_blank"><img src=
-=3D"https://lh6.googleusercontent.com/NKH1QkaDAu0MwXJAI90e7qf8dHpejoc4PLICJ=
-POPCu-JgUALchzfqpTGdw4o-_Kh5r7vH1KPVdE5_8ZI--LZZPT7-Gd2rBlk1lI0aaFshOhcCayO=
-4nDI-GtFFarGwLSIGp6WrC8O" width=3D"149" height=3D"35" style=3D"border:none"=
-></a></span></p><div><br></div></span></div></div></div></div></div></div><=
-/div></div>
+=20
 
---000000000000fd0deb058f136e67--
---000000000000fd0dee058f136e69
-Content-Type: application/octet-stream; name=noname
-Content-Disposition: attachment; filename=noname
-Content-Transfer-Encoding: base64
-Content-ID: <16c4eb3341cc204bfcc1>
-X-Attachment-Id: 16c4eb3341cc204bfcc1
+=20
+
+From: Karen Wizeman <kw.ttnewcity@verizon.net>=20
+Sent: Friday, August 2, 2019 10:40 AM
+Hi Claire,
+
+=20
+
+Can you contact me on this matter please. Marilu Scurti 914-260-8138
+
+=20
+
+Thank you,
+
+Marilu Scurti
+
+=20
+
+=20
 
 
---000000000000fd0dee058f136e69
+
+227 N. Main Street
+
+New City, NY 10956
+
+www.TutorTimeNewCity.com <http://www.TutorTimeNewCity.com>   =20
+
+mscurti@optonline.net <mailto:mscurti@optonline.net>=20
+
+cell (914) 260-8138
+
+fax (631) 586-4727
+
+=20
+
+=20
+
+=20
+
+From: Claire from brightwheel [mailto:claire@mybrightwheel.com]=20
+Sent: Thursday, August 01, 2019 3:38 PM
+To: kw.ttnewcity@verizon.net <mailto:kw.ttnewcity@verizon.net>=20
+Subject: =E2=9A=A0=EF=B8=8F Update: Please update your devices using TLS 1.=
+0/1.1
+
+=20
+
+=09
+
+
+
+=09
+
+
+
+=20
+
+=20
+
+
+  <https://brightwheel-4922e5bfba99.intercom-mail.com/i/o/138040680/0e6cda8=
+2e9b94cfa9f285c92/logo-on-white-+test+152px.png>=20
+
+Hi Karen,
+
+You are receiving this notification because you or parents at your center h=
+ave devices using the TLS 1.0/1.1 protocol.=20
+
+These older versions of the TLS protocol are no longer considered secure by=
+  <https://brightwheel-4922e5bfba99.intercom-mail.com/via/e?ob=3DjTsOlfcTV2=
+S6%2FglLCzBFE6IO3kz8jioUT2GL%2FseqZGOIBaHrC6LDWhcp1g3Hsd0NeTT1tUac6t6iWcVQD=
+73csY5VwRaPXsXupTI4G5LHqNjABY6xcJeP4PwU5MfN2J2uVLBNUYZvJgVzXYOiDusxhAfdXwuv=
+OeviwwtFa2JpXXO7sm800%2F7tOfCYJZepvgSf&h=3D9e78ce36c909f5b0e5f0460b891ccea6=
+f989aa5c-23092744736&l=3Dc485866d069c0a56dacc1e901ba31129e626fbc7-1378980> =
+industry experts.
+
+To provide the best data protection possible for our customers, brightwheel=
+ is removing support for TLS 1.0/1.1 on October 1, 2019.
+
+How this impacts you:
+
+Starting October 1, 2019, you will no longer be able to use brightwheel wit=
+h a TLS 1.0/1.1 browser or device.=20
+
+How do I know if my browser or device is compatible and what do I need to d=
+o?
+
+Be sure to update your browser or use a device that supports TLS 1.2 and hi=
+gher.  <https://brightwheel-4922e5bfba99.intercom-mail.com/via/e?ob=3DhLPOe=
+wAqmUBs5cBu%2Fiw4SfT%2BZlT%2F2FhVwFvujW57myguTB3vsPqr9puO6r4ZKJg97vj1ZB%2BC=
+fg3BKqlGn%2BezM%2BtQZM7nHyYMjWBm8u%2Btoz9DF7La4eo0Xnn9AQz9RQLdGVuBOciW3Dl0Y=
+LMhZQWA1A%3D%3D&h=3D488c4300e6916438199608d10d4049416f9ab08b-23092744736&l=
+=3D3d42e17e636554f8ddde3d35319cdaf74a6216f5-1378981> Read this article to f=
+ind out which operating systems, browsers, and devices you can use.
+
+If you do need a new device, you can find devices we recommend  <https://br=
+ightwheel-4922e5bfba99.intercom-mail.com/via/e?ob=3DtW6S3%2FEnvSnHS3qBuvim0=
+bGTM5XvSpfcQZmLU3cN5PNKRioxZBJvLwoZJAFxUGLdaPj0%2BCHmNv0eldqNNh7bi2narxbPeK=
+U5sZHh8DMWT6w%3D&h=3D788f159457288283b1a9983d1eb29dd63c5cf4ee-23092744736&l=
+=3De9d16eca010f4224a09900bfa510fa9396f606cc-1378982> here.
+
+We apologize for any inconvenience. If you experience any issues or have an=
+y questions please reach out to our support team for assistance.=20
+
+Thank you,
+
+Brightwheel Support
+
+=20
+
+
+  <https://brightwheel-4922e5bfba99.intercom-mail.com/assets/email/personal=
+/triangle-8747882e9ef8882f9bc057241fd3c049.png>=20
+
+
+  <https://brightwheel-4922e5bfba99.intercom-mail.com/assets/email/personal=
+/arrow-37f6774809df6fd083bfc98e9d562e23ca6ede618e2b5e10c042de88d2f858dd.png=
+>=20
+
+=20
+
+=09
+
+=20
+
+
+
+=20
+
+  <https://brightwheel-4922e5bfba99.intercom-mail.com/avatars/1781170/squar=
+e_128/LRG_DSC03910-1537568073.jpg?1537568073>=20
+
+Claire from brightwheel=20
+
+
+ <https://brightwheel-4922e5bfba99.intercom-mail.com/subscriptions/unsubscr=
+ibe?app_id=3Dmbdwkcq4&conversation_id=3D23092744736&user_id=3D5b6ccc5b1e614=
+f36080ea179> Unsubscribe from our emails=20
+
+=09
+
+=09
+
+  <https://brightwheel-4922e5bfba99.intercom-mail.com/via/o?h=3D9ba32c6cdbd=
+3f88764e01edd91da046d5c0782cc-23092744736>   <https://brightwheel-4922e5bfb=
+a99.intercom-mail.com/q/cocGcTSHiLeDpVQ6ES-G4A~~/AAAAAQA~/RgRfJcS0PlcIaW50Z=
+XJjb21CCgAltD9DXYQYycJSGGt3LnR0bmV3Y2l0eUB2ZXJpem9uLm5ldFgEAAAKwg~~>=20
+
+
+------=_NextPart_002_011A_01D54946.189AE380
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40"><head><meta http-equiv=3DContent-Type content=
+=3D"text/html; charset=3Dutf-8"><meta name=3DGenerator content=3D"Microsoft=
+ Word 15 (filtered medium)"><!--[if !mso]><style>v\:* {behavior:url(#defaul=
+t#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style><![endif]--><style><!--
+/* Font Definitions */
+@font-face
+=09{font-family:Helvetica;
+=09panose-1:2 11 6 4 2 2 2 2 2 4;}
+@font-face
+=09{font-family:"Cambria Math";
+=09panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+=09{font-family:Calibri;
+=09panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+=09{font-family:"Segoe UI Emoji";
+=09panose-1:2 11 5 2 4 2 4 2 2 3;}
+@font-face
+=09{font-family:Cambria;
+=09panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+=09{font-family:Consolas;
+=09panose-1:2 11 6 9 2 2 4 3 2 4;}
+@font-face
+=09{font-family:Tahoma;
+=09panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+=09{font-family:"Brush Script MT";
+=09panose-1:3 6 8 2 4 4 6 7 3 4;}
+@font-face
+=09{font-family:"Amazone BT";}
+@font-face
+=09{font-family:"Americana BT";}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+=09{margin:0in;
+=09margin-bottom:.0001pt;
+=09font-size:12.0pt;
+=09font-family:"Times New Roman",serif;}
+h1
+=09{mso-style-priority:9;
+=09mso-style-link:"Heading 1 Char";
+=09mso-margin-top-alt:auto;
+=09margin-right:0in;
+=09mso-margin-bottom-alt:auto;
+=09margin-left:0in;
+=09font-size:24.0pt;
+=09font-family:"Times New Roman",serif;
+=09font-weight:bold;}
+h2
+=09{mso-style-priority:9;
+=09mso-style-link:"Heading 2 Char";
+=09mso-margin-top-alt:auto;
+=09margin-right:0in;
+=09mso-margin-bottom-alt:auto;
+=09margin-left:0in;
+=09font-size:18.0pt;
+=09font-family:"Times New Roman",serif;
+=09font-weight:bold;}
+h3
+=09{mso-style-priority:9;
+=09mso-style-link:"Heading 3 Char";
+=09mso-margin-top-alt:auto;
+=09margin-right:0in;
+=09mso-margin-bottom-alt:auto;
+=09margin-left:0in;
+=09font-size:13.5pt;
+=09font-family:"Times New Roman",serif;
+=09font-weight:bold;}
+h4
+=09{mso-style-priority:9;
+=09mso-style-link:"Heading 4 Char";
+=09mso-margin-top-alt:auto;
+=09margin-right:0in;
+=09mso-margin-bottom-alt:auto;
+=09margin-left:0in;
+=09font-size:12.0pt;
+=09font-family:"Times New Roman",serif;
+=09font-weight:bold;}
+h5
+=09{mso-style-priority:9;
+=09mso-style-link:"Heading 5 Char";
+=09mso-margin-top-alt:auto;
+=09margin-right:0in;
+=09mso-margin-bottom-alt:auto;
+=09margin-left:0in;
+=09font-size:10.0pt;
+=09font-family:"Times New Roman",serif;
+=09font-weight:bold;}
+a:link, span.MsoHyperlink
+=09{mso-style-priority:99;
+=09color:blue;
+=09text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+=09{mso-style-priority:99;
+=09color:purple;
+=09text-decoration:underline;}
+code
+=09{mso-style-priority:99;
+=09font-family:"Courier New";}
+pre
+=09{mso-style-priority:99;
+=09mso-style-link:"HTML Preformatted Char";
+=09margin:0in;
+=09margin-bottom:.0001pt;
+=09font-size:10.0pt;
+=09font-family:"Courier New";}
+span.Heading1Char
+=09{mso-style-name:"Heading 1 Char";
+=09mso-style-priority:9;
+=09mso-style-link:"Heading 1";
+=09font-family:"Cambria",serif;
+=09color:#365F91;
+=09font-weight:bold;}
+span.Heading2Char
+=09{mso-style-name:"Heading 2 Char";
+=09mso-style-priority:9;
+=09mso-style-link:"Heading 2";
+=09font-family:"Cambria",serif;
+=09color:#4F81BD;
+=09font-weight:bold;}
+span.Heading3Char
+=09{mso-style-name:"Heading 3 Char";
+=09mso-style-priority:9;
+=09mso-style-link:"Heading 3";
+=09font-family:"Cambria",serif;
+=09color:#4F81BD;
+=09font-weight:bold;}
+span.Heading4Char
+=09{mso-style-name:"Heading 4 Char";
+=09mso-style-priority:9;
+=09mso-style-link:"Heading 4";
+=09font-family:"Cambria",serif;
+=09color:#4F81BD;
+=09font-weight:bold;
+=09font-style:italic;}
+span.Heading5Char
+=09{mso-style-name:"Heading 5 Char";
+=09mso-style-priority:9;
+=09mso-style-link:"Heading 5";
+=09font-family:"Cambria",serif;
+=09color:#243F60;}
+span.HTMLPreformattedChar
+=09{mso-style-name:"HTML Preformatted Char";
+=09mso-style-priority:99;
+=09mso-style-link:"HTML Preformatted";
+=09font-family:Consolas;}
+p.msonormal0, li.msonormal0, div.msonormal0
+=09{mso-style-name:msonormal;
+=09mso-style-priority:99;
+=09mso-margin-top-alt:auto;
+=09margin-right:0in;
+=09mso-margin-bottom-alt:auto;
+=09margin-left:0in;
+=09font-size:12.0pt;
+=09font-family:"Times New Roman",serif;}
+p.intro, li.intro, div.intro
+=09{mso-style-name:intro;
+=09mso-style-priority:99;
+=09mso-margin-top-alt:auto;
+=09margin-right:0in;
+=09mso-margin-bottom-alt:auto;
+=09margin-left:0in;
+=09font-size:12.0pt;
+=09font-family:"Times New Roman",serif;}
+p.externalclass, li.externalclass, div.externalclass
+=09{mso-style-name:externalclass;
+=09mso-style-priority:99;
+=09mso-margin-top-alt:auto;
+=09margin-right:0in;
+=09mso-margin-bottom-alt:auto;
+=09margin-left:0in;
+=09font-size:12.0pt;
+=09font-family:"Times New Roman",serif;}
+p.commentheadertd, li.commentheadertd, div.commentheadertd
+=09{mso-style-name:comment_header_td;
+=09mso-style-priority:99;
+=09mso-margin-top-alt:auto;
+=09margin-right:0in;
+=09mso-margin-bottom-alt:auto;
+=09margin-left:0in;
+=09background:#2299BB;
+=09font-size:12.0pt;
+=09font-family:"Arial",sans-serif;}
+p.content-td, li.content-td, div.content-td
+=09{mso-style-name:content-td;
+=09mso-style-priority:99;
+=09mso-margin-top-alt:auto;
+=09margin-right:0in;
+=09mso-margin-bottom-alt:auto;
+=09margin-left:0in;
+=09font-size:12.0pt;
+=09font-family:"Helvetica",sans-serif;
+=09color:#525252;}
+p.mainwrapper, li.mainwrapper, div.mainwrapper
+=09{mso-style-name:main_wrapper;
+=09mso-style-priority:99;
+=09mso-margin-top-alt:auto;
+=09margin-right:0in;
+=09mso-margin-bottom-alt:auto;
+=09margin-left:0in;
+=09font-size:12.0pt;
+=09font-family:"Times New Roman",serif;}
+p.margin-arrow, li.margin-arrow, div.margin-arrow
+=09{mso-style-name:margin-arrow;
+=09mso-style-priority:99;
+=09mso-margin-top-alt:auto;
+=09margin-right:0in;
+=09mso-margin-bottom-alt:auto;
+=09margin-left:0in;
+=09font-size:12.0pt;
+=09font-family:"Times New Roman",serif;
+=09display:none;}
+p.intercom-interblocks-link-author-avatar, li.intercom-interblocks-link-aut=
+hor-avatar, div.intercom-interblocks-link-author-avatar
+=09{mso-style-name:intercom-interblocks-link-author-avatar;
+=09mso-style-priority:99;
+=09mso-margin-top-alt:auto;
+=09margin-right:3.75pt;
+=09mso-margin-bottom-alt:auto;
+=09margin-left:0in;
+=09font-size:12.0pt;
+=09font-family:"Times New Roman",serif;}
+p.intercom-interblocks-article-author-avatar, li.intercom-interblocks-artic=
+le-author-avatar, div.intercom-interblocks-article-author-avatar
+=09{mso-style-name:intercom-interblocks-article-author-avatar;
+=09mso-style-priority:99;
+=09mso-margin-top-alt:auto;
+=09margin-right:3.75pt;
+=09mso-margin-bottom-alt:auto;
+=09margin-left:0in;
+=09font-size:12.0pt;
+=09font-family:"Times New Roman",serif;}
+p.intercom-container, li.intercom-container, div.intercom-container
+=09{mso-style-name:intercom-container;
+=09mso-style-priority:99;
+=09mso-margin-top-alt:auto;
+=09margin-right:0in;
+=09mso-margin-bottom-alt:auto;
+=09margin-left:0in;
+=09font-size:12.0pt;
+=09font-family:"Times New Roman",serif;}
+p.intercom-h2b-button, li.intercom-h2b-button, div.intercom-h2b-button
+=09{mso-style-name:intercom-h2b-button;
+=09mso-style-priority:99;
+=09mso-margin-top-alt:auto;
+=09margin-right:0in;
+=09mso-margin-bottom-alt:auto;
+=09margin-left:0in;
+=09font-size:12.0pt;
+=09font-family:"Times New Roman",serif;}
+p.avatar, li.avatar, div.avatar
+=09{mso-style-name:avatar;
+=09mso-style-priority:99;
+=09mso-margin-top-alt:auto;
+=09margin-right:0in;
+=09mso-margin-bottom-alt:auto;
+=09margin-left:0in;
+=09font-size:12.0pt;
+=09font-family:"Times New Roman",serif;}
+p.intercom-align-right, li.intercom-align-right, div.intercom-align-right
+=09{mso-style-name:intercom-align-right;
+=09mso-style-priority:99;
+=09mso-margin-top-alt:auto;
+=09margin-right:0in;
+=09mso-margin-bottom-alt:auto;
+=09margin-left:0in;
+=09text-align:right;
+=09font-size:12.0pt;
+=09font-family:"Times New Roman",serif;}
+p.intercom-align-center, li.intercom-align-center, div.intercom-align-cente=
+r
+=09{mso-style-name:intercom-align-center;
+=09mso-style-priority:99;
+=09mso-margin-top-alt:auto;
+=09margin-right:0in;
+=09mso-margin-bottom-alt:auto;
+=09margin-left:0in;
+=09text-align:center;
+=09font-size:12.0pt;
+=09font-family:"Times New Roman",serif;}
+p.intercom-align-left, li.intercom-align-left, div.intercom-align-left
+=09{mso-style-name:intercom-align-left;
+=09mso-style-priority:99;
+=09mso-margin-top-alt:auto;
+=09margin-right:0in;
+=09mso-margin-bottom-alt:auto;
+=09margin-left:0in;
+=09font-size:12.0pt;
+=09font-family:"Times New Roman",serif;}
+p.intercom-attachment, li.intercom-attachment, div.intercom-attachment
+=09{mso-style-name:intercom-attachment;
+=09mso-style-priority:99;
+=09margin-top:0in;
+=09margin-right:0in;
+=09margin-bottom:3.75pt;
+=09margin-left:0in;
+=09font-size:12.0pt;
+=09font-family:"Times New Roman",serif;}
+p.intercom-attachments, li.intercom-attachments, div.intercom-attachments
+=09{mso-style-name:intercom-attachments;
+=09mso-style-priority:99;
+=09margin-top:7.5pt;
+=09margin-right:0in;
+=09margin-bottom:7.5pt;
+=09margin-left:0in;
+=09font-size:12.0pt;
+=09font-family:"Times New Roman",serif;}
+p.intercom-interblocks-content-card, li.intercom-interblocks-content-card, =
+div.intercom-interblocks-content-card
+=09{mso-style-name:intercom-interblocks-content-card;
+=09mso-style-priority:99;
+=09mso-margin-top-alt:auto;
+=09margin-right:0in;
+=09mso-margin-bottom-alt:auto;
+=09margin-left:0in;
+=09font-size:12.0pt;
+=09font-family:"Times New Roman",serif;}
+p.intercom-interblocks-link, li.intercom-interblocks-link, div.intercom-int=
+erblocks-link
+=09{mso-style-name:intercom-interblocks-link;
+=09mso-style-priority:99;
+=09mso-margin-top-alt:auto;
+=09margin-right:0in;
+=09mso-margin-bottom-alt:auto;
+=09margin-left:0in;
+=09font-size:12.0pt;
+=09font-family:"Times New Roman",serif;}
+p.intercom-interblocks-article-card, li.intercom-interblocks-article-card, =
+div.intercom-interblocks-article-card
+=09{mso-style-name:intercom-interblocks-article-card;
+=09mso-style-priority:99;
+=09mso-margin-top-alt:auto;
+=09margin-right:0in;
+=09mso-margin-bottom-alt:auto;
+=09margin-left:0in;
+=09font-size:12.0pt;
+=09font-family:"Times New Roman",serif;}
+p.intercom-interblocks-article-icon, li.intercom-interblocks-article-icon, =
+div.intercom-interblocks-article-icon
+=09{mso-style-name:intercom-interblocks-article-icon;
+=09mso-style-priority:99;
+=09mso-margin-top-alt:auto;
+=09margin-right:0in;
+=09mso-margin-bottom-alt:auto;
+=09margin-left:0in;
+=09background:#FAFAFA;
+=09font-size:12.0pt;
+=09font-family:"Times New Roman",serif;}
+p.intercom-interblocks-article-text, li.intercom-interblocks-article-text, =
+div.intercom-interblocks-article-text
+=09{mso-style-name:intercom-interblocks-article-text;
+=09mso-style-priority:99;
+=09mso-margin-top-alt:auto;
+=09margin-right:0in;
+=09mso-margin-bottom-alt:auto;
+=09margin-left:0in;
+=09background:white;
+=09font-size:12.0pt;
+=09font-family:"Times New Roman",serif;}
+p.intercom-interblocks-link-description, li.intercom-interblocks-link-descr=
+iption, div.intercom-interblocks-link-description
+=09{mso-style-name:intercom-interblocks-link-description;
+=09mso-style-priority:99;
+=09margin-top:0in;
+=09margin-right:13.5pt;
+=09margin-bottom:9.0pt;
+=09margin-left:13.5pt;
+=09line-height:15.6pt;
+=09font-size:10.5pt;
+=09font-family:"Times New Roman",serif;
+=09color:#65757C;}
+p.intercom-interblocks-article-body, li.intercom-interblocks-article-body, =
+div.intercom-interblocks-article-body
+=09{mso-style-name:intercom-interblocks-article-body;
+=09mso-style-priority:99;
+=09margin-top:0in;
+=09margin-right:13.5pt;
+=09margin-bottom:9.0pt;
+=09margin-left:13.5pt;
+=09line-height:15.6pt;
+=09font-size:10.5pt;
+=09font-family:"Times New Roman",serif;
+=09color:#65757C;}
+p.intercom-interblocks-link-author, li.intercom-interblocks-link-author, di=
+v.intercom-interblocks-link-author
+=09{mso-style-name:intercom-interblocks-link-author;
+=09mso-style-priority:99;
+=09margin-top:7.5pt;
+=09margin-right:11.25pt;
+=09margin-bottom:7.5pt;
+=09margin-left:11.25pt;
+=09font-size:12.0pt;
+=09font-family:"Times New Roman",serif;}
+p.intercom-interblocks-article-author, li.intercom-interblocks-article-auth=
+or, div.intercom-interblocks-article-author
+=09{mso-style-name:intercom-interblocks-article-author;
+=09mso-style-priority:99;
+=09margin-top:7.5pt;
+=09margin-right:11.25pt;
+=09margin-bottom:7.5pt;
+=09margin-left:11.25pt;
+=09font-size:12.0pt;
+=09font-family:"Times New Roman",serif;}
+p.intercom-interblocks-link-author-avatar-image, li.intercom-interblocks-li=
+nk-author-avatar-image, div.intercom-interblocks-link-author-avatar-image
+=09{mso-style-name:intercom-interblocks-link-author-avatar-image;
+=09mso-style-priority:99;
+=09margin:0in;
+=09margin-bottom:.0001pt;
+=09font-size:9.0pt;
+=09font-family:"Times New Roman",serif;}
+p.intercom-interblocks-article-author-avatar-image, li.intercom-interblocks=
+-article-author-avatar-image, div.intercom-interblocks-article-author-avata=
+r-image
+=09{mso-style-name:intercom-interblocks-article-author-avatar-image;
+=09mso-style-priority:99;
+=09margin:0in;
+=09margin-bottom:.0001pt;
+=09font-size:9.0pt;
+=09font-family:"Times New Roman",serif;}
+p.intercom-interblocks-link-author-name, li.intercom-interblocks-link-autho=
+r-name, div.intercom-interblocks-link-author-name
+=09{mso-style-name:intercom-interblocks-link-author-name;
+=09mso-style-priority:99;
+=09margin-top:0in;
+=09margin-right:0in;
+=09margin-bottom:0in;
+=09margin-left:3.75pt;
+=09margin-bottom:.0001pt;
+=09font-size:9.0pt;
+=09font-family:"Times New Roman",serif;
+=09color:#74848B;}
+p.intercom-interblocks-article-author-name, li.intercom-interblocks-article=
+-author-name, div.intercom-interblocks-article-author-name
+=09{mso-style-name:intercom-interblocks-article-author-name;
+=09mso-style-priority:99;
+=09margin-top:0in;
+=09margin-right:0in;
+=09margin-bottom:0in;
+=09margin-left:3.75pt;
+=09margin-bottom:.0001pt;
+=09font-size:9.0pt;
+=09font-family:"Times New Roman",serif;
+=09color:#74848B;}
+p.intercom-interblocks-article-written-by, li.intercom-interblocks-article-=
+written-by, div.intercom-interblocks-article-written-by
+=09{mso-style-name:intercom-interblocks-article-written-by;
+=09mso-style-priority:99;
+=09margin-top:.75pt;
+=09margin-right:0in;
+=09margin-bottom:0in;
+=09margin-left:3.75pt;
+=09margin-bottom:.0001pt;
+=09font-size:9.0pt;
+=09font-family:"Times New Roman",serif;
+=09color:#8897A4;}
+p.icon, li.icon, div.icon
+=09{mso-style-name:icon;
+=09mso-style-priority:99;
+=09mso-margin-top-alt:auto;
+=09margin-right:0in;
+=09mso-margin-bottom-alt:auto;
+=09margin-left:0in;
+=09font-size:12.0pt;
+=09font-family:"Times New Roman",serif;}
+p.icusercommentbody, li.icusercommentbody, div.icusercommentbody
+=09{mso-style-name:ic_user_comment_body;
+=09mso-style-priority:99;
+=09mso-margin-top-alt:auto;
+=09margin-right:0in;
+=09mso-margin-bottom-alt:auto;
+=09margin-left:0in;
+=09font-size:12.0pt;
+=09font-family:"Times New Roman",serif;}
+p.icusercommentbody1, li.icusercommentbody1, div.icusercommentbody1
+=09{mso-style-name:ic_user_comment_body1;
+=09mso-style-priority:99;
+=09mso-margin-top-alt:auto;
+=09margin-right:0in;
+=09mso-margin-bottom-alt:auto;
+=09margin-left:0in;
+=09background:#0072B0;
+=09font-size:12.0pt;
+=09font-family:"Times New Roman",serif;}
+p.intro1, li.intro1, div.intro1
+=09{mso-style-name:intro1;
+=09mso-style-priority:99;
+=09margin-top:0in;
+=09margin-right:0in;
+=09margin-bottom:12.75pt;
+=09margin-left:0in;
+=09line-height:22.5pt;
+=09font-size:15.0pt;
+=09font-family:"Times New Roman",serif;}
+p.intercom-container1, li.intercom-container1, div.intercom-container1
+=09{mso-style-name:intercom-container1;
+=09mso-style-priority:99;
+=09margin-top:0in;
+=09margin-right:0in;
+=09margin-bottom:12.0pt;
+=09margin-left:0in;
+=09font-size:12.0pt;
+=09font-family:"Times New Roman",serif;}
+p.intercom-h2b-button1, li.intercom-h2b-button1, div.intercom-h2b-button1
+=09{mso-style-name:intercom-h2b-button1;
+=09mso-style-priority:99;
+=09margin-top:0in;
+=09margin-right:0in;
+=09margin-bottom:12.75pt;
+=09margin-left:0in;
+=09background:#2299BB;
+=09font-size:10.5pt;
+=09font-family:"Times New Roman",serif;
+=09color:white;
+=09font-weight:bold;}
+p.intercom-h2b-button2, li.intercom-h2b-button2, div.intercom-h2b-button2
+=09{mso-style-name:intercom-h2b-button2;
+=09mso-style-priority:99;
+=09margin-top:0in;
+=09margin-right:0in;
+=09margin-bottom:12.75pt;
+=09margin-left:0in;
+=09background:#27B4DC;
+=09font-size:10.5pt;
+=09font-family:"Times New Roman",serif;
+=09color:white;
+=09font-weight:bold;}
+p.avatar1, li.avatar1, div.avatar1
+=09{mso-style-name:avatar1;
+=09mso-style-priority:99;
+=09mso-margin-top-alt:auto;
+=09margin-right:0in;
+=09mso-margin-bottom-alt:auto;
+=09margin-left:0in;
+=09font-size:12.0pt;
+=09font-family:"Times New Roman",serif;}
+p.intercom-container2, li.intercom-container2, div.intercom-container2
+=09{mso-style-name:intercom-container2;
+=09mso-style-priority:99;
+=09margin-top:0in;
+=09margin-right:0in;
+=09margin-bottom:12.0pt;
+=09margin-left:0in;
+=09font-size:12.0pt;
+=09font-family:"Times New Roman",serif;}
+p.intercom-align-right1, li.intercom-align-right1, div.intercom-align-right=
+1
+=09{mso-style-name:intercom-align-right1;
+=09mso-style-priority:99;
+=09mso-margin-top-alt:auto;
+=09margin-right:0in;
+=09mso-margin-bottom-alt:auto;
+=09margin-left:0in;
+=09font-size:12.0pt;
+=09font-family:"Times New Roman",serif;}
+p.intercom-align-left1, li.intercom-align-left1, div.intercom-align-left1
+=09{mso-style-name:intercom-align-left1;
+=09mso-style-priority:99;
+=09mso-margin-top-alt:auto;
+=09margin-right:0in;
+=09mso-margin-bottom-alt:auto;
+=09margin-left:0in;
+=09text-align:right;
+=09font-size:12.0pt;
+=09font-family:"Times New Roman",serif;}
+p.intercom-h2b-button3, li.intercom-h2b-button3, div.intercom-h2b-button3
+=09{mso-style-name:intercom-h2b-button3;
+=09mso-style-priority:99;
+=09mso-margin-top-alt:auto;
+=09margin-right:0in;
+=09mso-margin-bottom-alt:auto;
+=09margin-left:0in;
+=09font-size:12.0pt;
+=09font-family:"Times New Roman",serif;}
+p.icon1, li.icon1, div.icon1
+=09{mso-style-name:icon1;
+=09mso-style-priority:99;
+=09margin:0in;
+=09margin-bottom:.0001pt;
+=09font-size:12.0pt;
+=09font-family:"Times New Roman",serif;}
+span.EmailStyle70
+=09{mso-style-type:personal;
+=09font-family:"Calibri",sans-serif;
+=09color:#1F497D;}
+span.EmailStyle72
+=09{mso-style-type:personal-reply;
+=09font-family:"Calibri",sans-serif;
+=09color:windowtext;}
+.MsoChpDefault
+=09{mso-style-type:export-only;
+=09font-size:10.0pt;}
+@page WordSection1
+=09{size:8.5in 11.0in;
+=09margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+=09{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]--></head><body lang=3DEN-US link=3Dblue vli=
+nk=3Dpurple><div class=3DWordSection1><p class=3DMsoNormal><span style=3D'f=
+ont-size:11.0pt;font-family:"Calibri",sans-serif'><o:p>&nbsp;</o:p></span><=
+/p><p class=3DMsoNormal><span style=3D'font-size:11.0pt;font-family:"Calibr=
+i",sans-serif'><o:p>&nbsp;</o:p></span></p><p class=3DMsoNormal><b><span st=
+yle=3D'font-size:11.0pt;font-family:"Calibri",sans-serif'>From:</span></b><=
+span style=3D'font-size:11.0pt;font-family:"Calibri",sans-serif'> Karen Wiz=
+eman &lt;kw.ttnewcity@verizon.net&gt; <br><b>Sent:</b> Friday, August 2, 20=
+19 10:40 AM<br></span><span style=3D'font-size:11.0pt;font-family:"Calibri"=
+,sans-serif'>Hi Claire,<o:p></o:p></span></p><p class=3DMsoNormal><span sty=
+le=3D'font-size:11.0pt;font-family:"Calibri",sans-serif'><o:p>&nbsp;</o:p><=
+/span></p><p class=3DMsoNormal><span style=3D'font-size:11.0pt;font-family:=
+"Calibri",sans-serif'>Can you contact me on this matter please. Marilu Scur=
+ti 914-260-8138<o:p></o:p></span></p><p class=3DMsoNormal><span style=3D'fo=
+nt-size:11.0pt;font-family:"Calibri",sans-serif'><o:p>&nbsp;</o:p></span></=
+p><p class=3DMsoNormal><span style=3D'font-size:11.0pt;font-family:"Calibri=
+",sans-serif'>Thank you,<o:p></o:p></span></p><p class=3DMsoNormal><b><span=
+ style=3D'font-size:20.0pt;font-family:"Brush Script MT";color:#3366FF'>Mar=
+ilu Scurti<o:p></o:p></span></b></p><p class=3DMsoNormal><b><span style=3D'=
+font-size:3.0pt;font-family:"Amazone BT";color:#3366FF'><o:p>&nbsp;</o:p></=
+span></b></p><p class=3DMsoNormal><span style=3D'font-size:4.0pt;font-famil=
+y:"Amazone BT";color:#CC0066'><o:p>&nbsp;</o:p></span></p><p class=3DMsoNor=
+mal><b><span style=3D'font-size:11.0pt;font-family:"Calibri",sans-serif'><i=
+mg width=3D147 height=3D31 style=3D'width:1.5312in;height:.3229in' id=3D"Pi=
+cture_x0020_1" src=3D"cid:image001.jpg@01D54946.1834A7A0" alt=3D"TT logo co=
+lor"><span style=3D'color:#0000CC'><o:p></o:p></span></span></b></p><p clas=
+s=3DMsoNormal><b><span style=3D'font-size:11.0pt;font-family:"Calibri",sans=
+-serif'>227 N. Main Street<o:p></o:p></span></b></p><p class=3DMsoNormal><b=
+><span style=3D'font-size:11.0pt;font-family:"Calibri",sans-serif'>New City=
+, NY 10956<o:p></o:p></span></b></p><p class=3DMsoNormal><b><span style=3D'=
+font-size:11.0pt;font-family:"Calibri",sans-serif;color:#7F7F7F'><a href=3D=
+"http://www.TutorTimeNewCity.com">www.TutorTimeNewCity.com</a>=C2=A0=C2=A0 =
+<o:p></o:p></span></b></p><p class=3DMsoNormal><u><span style=3D'font-size:=
+10.0pt;font-family:"Americana BT";color:#3366FF'><a href=3D"mailto:mscurti@=
+optonline.net">mscurti@optonline.net</a></span></u><span style=3D'font-size=
+:11.0pt;font-family:"Calibri",sans-serif;color:#3366FF'><o:p></o:p></span><=
+/p><p class=3DMsoNormal><span style=3D'font-size:10.0pt;font-family:"Calibr=
+i",sans-serif'>cell</span><span style=3D'font-size:11.0pt;font-family:"Cali=
+bri",sans-serif'> (914) 260-8138<o:p></o:p></span></p><p class=3DMsoNormal>=
+<span style=3D'font-size:10.0pt;font-family:"Calibri",sans-serif'>fax </spa=
+n><span style=3D'font-size:11.0pt;font-family:"Calibri",sans-serif'>(631) 5=
+86-4727<o:p></o:p></span></p><p class=3DMsoNormal><span style=3D'font-size:=
+11.0pt;font-family:"Calibri",sans-serif'><o:p>&nbsp;</o:p></span></p><p cla=
+ss=3DMsoNormal><span style=3D'font-size:11.0pt;font-family:"Calibri",sans-s=
+erif'><o:p>&nbsp;</o:p></span></p><p class=3DMsoNormal><span style=3D'font-=
+size:11.0pt;font-family:"Calibri",sans-serif'><o:p>&nbsp;</o:p></span></p><=
+div><div style=3D'border:none;border-top:solid #B5C4DF 1.0pt;padding:3.0pt =
+0in 0in 0in'><p class=3DMsoNormal><b><span style=3D'font-size:10.0pt;font-f=
+amily:"Tahoma",sans-serif'>From:</span></b><span style=3D'font-size:10.0pt;=
+font-family:"Tahoma",sans-serif'> Claire from brightwheel [<a href=3D"mailt=
+o:claire@mybrightwheel.com">mailto:claire@mybrightwheel.com</a>] <br><b>Sen=
+t:</b> Thursday, August 01, 2019 3:38 PM<br><b>To:</b> <a href=3D"mailto:kw=
+.ttnewcity@verizon.net">kw.ttnewcity@verizon.net</a><br><b>Subject:</b> </s=
+pan><span style=3D'font-size:10.0pt;font-family:"Segoe UI Emoji",sans-serif=
+'>=E2=9A=A0</span><span style=3D'font-size:10.0pt;font-family:"Tahoma",sans=
+-serif'>=EF=B8=8F Update: Please update your devices using TLS 1.0/1.1<o:p>=
+</o:p></span></p></div></div><p class=3DMsoNormal><o:p>&nbsp;</o:p></p><div=
+ align=3Dcenter><table class=3DMsoNormalTable border=3D0 cellspacing=3D0 ce=
+llpadding=3D0 style=3D'background:#F9F9F9;border-collapse:collapse'><tr><td=
+ style=3D'padding:0in 0in 0in 0in'></td></tr><tr><td style=3D'padding:0in 0=
+in 0in 0in'><table class=3DMsoNormalTable border=3D0 cellpadding=3D0 style=
+=3D'max-width:476.25pt;min-width: 320px'><tr><td style=3D'padding:.75pt .75=
+pt .75pt .75pt'><table class=3DMsoNormalTable border=3D0 cellspacing=3D0 ce=
+llpadding=3D0 width=3D"100%" style=3D'width:100.0%;border-collapse:collapse=
+'><tr><td valign=3Dtop style=3D'padding:.75pt .75pt .75pt .75pt'><table cla=
+ss=3DMsoNormalTable border=3D0 cellspacing=3D0 cellpadding=3D0 width=3D"100=
+%" style=3D'width:100.0%;border-collapse:collapse'><tr><td style=3D'padding=
+:0in 0in 0in 0in'></td></tr></table></td></tr><tr><td valign=3Dtop style=3D=
+'padding:0in 15.0pt 0in 15.0pt'><div align=3Dcenter><table class=3DMsoNorma=
+lTable border=3D0 cellspacing=3D0 cellpadding=3D0 width=3D"100%" style=3D'w=
+idth:100.0%;border-collapse:collapse;-webkit-background-clip: padding-box;-=
+webkit-border-radius: 3px;background-clip: padding-box;border-radius: 3px'>=
+<tr><td valign=3Dtop style=3D'padding:0in 0in 0in 0in'><table class=3DMsoNo=
+rmalTable border=3D0 cellspacing=3D0 cellpadding=3D0 width=3D"100%" style=
+=3D'width:100.0%'><tr><td width=3D"100%" valign=3Dtop style=3D'width:100.0%=
+;background:#2299BB;padding:0in 0in 0in 0in'><p class=3DMsoNormal style=3D'=
+line-height:2.25pt'><span style=3D'font-size:1.0pt;font-family:"Arial",sans=
+-serif;color:black'>&nbsp;</span><span style=3D'font-size:1.0pt;font-family=
+:"Arial",sans-serif'><o:p></o:p></span></p></td></tr></table><p class=3DMso=
+Normal style=3D'line-height:15.0pt'><span style=3D'font-size:10.0pt;font-fa=
+mily:"Arial",sans-serif;color:#545454;display:none'><o:p>&nbsp;</o:p></span=
+></p><table class=3DMsoNormalTable border=3D0 cellspacing=3D0 cellpadding=
+=3D0 width=3D"100%" style=3D'width:100.0%;border-collapse:collapse;-webkit-=
+background-clip: padding-box;-webkit-border-radius: 0 0 3px 3px;background-=
+clip: padding-box;border-radius: 0 0 3px 3px'><tr><td style=3D'border:solid=
+ #DDDDDD 1.0pt;border-bottom:none;background:white;padding:30.0pt 30.0pt 22=
+.5pt 30.0pt;-webkit-background-clip: padding-box;-webkit-border-radius: 0 0=
+ 3px 3px;background-clip: padding-box;border-radius: 0 0 3px 3px;box-shadow=
+: 0 1px 3px 0 rgba(0, 0, 0, 0.05);overflow:hidden'><div style=3D'margin-bot=
+tom:12.0pt'><p class=3DMsoNormal style=3D'line-height:16.5pt'><span style=
+=3D'font-size:11.5pt;font-family:"Arial",sans-serif;color:#525252'><img bor=
+der=3D0 id=3D"_x0000_i1025" src=3D"https://brightwheel-4922e5bfba99.interco=
+m-mail.com/i/o/138040680/0e6cda82e9b94cfa9f285c92/logo-on-white-+test+152px=
+.png"><o:p></o:p></span></p></div><p class=3Dintercom-align-left style=3D'm=
+so-margin-top-alt:0in;margin-right:0in;margin-bottom:12.75pt;margin-left:0i=
+n'><span style=3D'font-size:11.5pt;font-family:"Arial",sans-serif;color:#52=
+5252'>Hi Karen,<o:p></o:p></span></p><p class=3Dintercom-align-left style=
+=3D'mso-margin-top-alt:0in;margin-right:0in;margin-bottom:12.75pt;margin-le=
+ft:0in'><span style=3D'font-size:11.5pt;font-family:"Arial",sans-serif;colo=
+r:#525252'>You are receiving this notification because you or parents at yo=
+ur center have devices using the TLS 1.0/1.1 protocol.&nbsp;<o:p></o:p></sp=
+an></p><p class=3Dintercom-align-left style=3D'mso-margin-top-alt:0in;margi=
+n-right:0in;margin-bottom:12.75pt;margin-left:0in'><span style=3D'font-size=
+:11.5pt;font-family:"Arial",sans-serif;color:#525252'>These older versions =
+of the TLS protocol are no longer considered secure by <a href=3D"https://b=
+rightwheel-4922e5bfba99.intercom-mail.com/via/e?ob=3DjTsOlfcTV2S6%2FglLCzBF=
+E6IO3kz8jioUT2GL%2FseqZGOIBaHrC6LDWhcp1g3Hsd0NeTT1tUac6t6iWcVQD73csY5VwRaPX=
+sXupTI4G5LHqNjABY6xcJeP4PwU5MfN2J2uVLBNUYZvJgVzXYOiDusxhAfdXwuvOeviwwtFa2Jp=
+XXO7sm800%2F7tOfCYJZepvgSf&amp;h=3D9e78ce36c909f5b0e5f0460b891ccea6f989aa5c=
+-23092744736&amp;l=3Dc485866d069c0a56dacc1e901ba31129e626fbc7-1378980" targ=
+et=3D"_blank"><span style=3D'color:#1251BA'>industry experts</span></a>.<o:=
+p></o:p></span></p><p class=3Dintercom-align-left style=3D'mso-margin-top-a=
+lt:0in;margin-right:0in;margin-bottom:12.75pt;margin-left:0in'><span style=
+=3D'font-size:11.5pt;font-family:"Arial",sans-serif;color:#525252'>To provi=
+de the best data protection possible for our customers, brightwheel is remo=
+ving support for TLS 1.0/1.1 on October 1, 2019.<o:p></o:p></span></p><p cl=
+ass=3Dintercom-align-left style=3D'mso-margin-top-alt:0in;margin-right:0in;=
+margin-bottom:12.75pt;margin-left:0in'><b><span style=3D'font-size:11.5pt;f=
+ont-family:"Arial",sans-serif;color:#525252'>How this impacts you:</span></=
+b><span style=3D'font-size:11.5pt;font-family:"Arial",sans-serif;color:#525=
+252'><o:p></o:p></span></p><p class=3Dintercom-align-left style=3D'mso-marg=
+in-top-alt:0in;margin-right:0in;margin-bottom:12.75pt;margin-left:0in'><spa=
+n style=3D'font-size:11.5pt;font-family:"Arial",sans-serif;color:#525252'>S=
+tarting October 1, 2019, you will no longer be able to use brightwheel with=
+ a TLS 1.0/1.1 browser or device.&nbsp;<o:p></o:p></span></p><p class=3Dint=
+ercom-align-left style=3D'mso-margin-top-alt:0in;margin-right:0in;margin-bo=
+ttom:12.75pt;margin-left:0in'><b><span style=3D'font-size:11.5pt;font-famil=
+y:"Arial",sans-serif;color:#525252'>How do I know if my browser or device i=
+s compatible and what do I need to do?</span></b><span style=3D'font-size:1=
+1.5pt;font-family:"Arial",sans-serif;color:#525252'><o:p></o:p></span></p><=
+p class=3Dintercom-align-left style=3D'mso-margin-top-alt:0in;margin-right:=
+0in;margin-bottom:12.75pt;margin-left:0in'><span style=3D'font-size:11.5pt;=
+font-family:"Arial",sans-serif;color:#525252'>Be sure to update your browse=
+r or use a device that supports TLS 1.2 and higher. <a href=3D"https://brig=
+htwheel-4922e5bfba99.intercom-mail.com/via/e?ob=3DhLPOewAqmUBs5cBu%2Fiw4SfT=
+%2BZlT%2F2FhVwFvujW57myguTB3vsPqr9puO6r4ZKJg97vj1ZB%2BCfg3BKqlGn%2BezM%2BtQ=
+ZM7nHyYMjWBm8u%2Btoz9DF7La4eo0Xnn9AQz9RQLdGVuBOciW3Dl0YLMhZQWA1A%3D%3D&amp;=
+h=3D488c4300e6916438199608d10d4049416f9ab08b-23092744736&amp;l=3D3d42e17e63=
+6554f8ddde3d35319cdaf74a6216f5-1378981" target=3D"_blank"><span style=3D'co=
+lor:#1251BA'>Read this article</span></a> to find out which operating syste=
+ms, browsers, and devices you can use.<o:p></o:p></span></p><p class=3Dinte=
+rcom-align-left style=3D'mso-margin-top-alt:0in;margin-right:0in;margin-bot=
+tom:12.75pt;margin-left:0in'><i><span style=3D'font-size:11.5pt;font-family=
+:"Arial",sans-serif;color:#525252'>If you do need a new device, you can fin=
+d devices we recommend </span></i><span style=3D'font-size:11.5pt;font-fami=
+ly:"Arial",sans-serif;color:#525252'><a href=3D"https://brightwheel-4922e5b=
+fba99.intercom-mail.com/via/e?ob=3DtW6S3%2FEnvSnHS3qBuvim0bGTM5XvSpfcQZmLU3=
+cN5PNKRioxZBJvLwoZJAFxUGLdaPj0%2BCHmNv0eldqNNh7bi2narxbPeKU5sZHh8DMWT6w%3D&=
+amp;h=3D788f159457288283b1a9983d1eb29dd63c5cf4ee-23092744736&amp;l=3De9d16e=
+ca010f4224a09900bfa510fa9396f606cc-1378982" target=3D"_blank"><i><span styl=
+e=3D'color:#1251BA'>here</span></i></a><i>.</i><o:p></o:p></span></p><p cla=
+ss=3Dintercom-align-left style=3D'mso-margin-top-alt:0in;margin-right:0in;m=
+argin-bottom:12.75pt;margin-left:0in'><span style=3D'font-size:11.5pt;font-=
+family:"Arial",sans-serif;color:#525252'>We apologize for any inconvenience=
+. If you experience any issues or have any questions please reach out to ou=
+r support team for assistance.&nbsp;<o:p></o:p></span></p><p class=3Dinterc=
+om-align-left style=3D'mso-margin-top-alt:0in;margin-right:0in;margin-botto=
+m:12.75pt;margin-left:0in'><span style=3D'font-size:11.5pt;font-family:"Ari=
+al",sans-serif;color:#525252'>Thank you,<o:p></o:p></span></p><p class=3Din=
+tercom-align-left style=3D'mso-margin-top-alt:0in;margin-right:0in;margin-b=
+ottom:12.75pt;margin-left:0in'><span style=3D'font-size:11.5pt;font-family:=
+"Arial",sans-serif;color:#525252'>Brightwheel Support<o:p></o:p></span></p>=
+</td></tr></table><p class=3DMsoNormal><span style=3D'font-size:11.0pt;font=
+-family:"Calibri",sans-serif'><o:p></o:p></span></p></td></tr></table></div=
+><div><p class=3DMsoNormal><span style=3D'display:none'><o:p>&nbsp;</o:p></=
+span></p><div align=3Dcenter><table class=3DMsoNormalTable border=3D0 cells=
+pacing=3D0 cellpadding=3D0 width=3D"100%" style=3D'width:100.0%;border-coll=
+apse:collapse;max-height: 0;max-width:100%;opacity: 0;overflow:hidden;visib=
+ility:hidden'><tr style=3D'height:13.5pt'><td width=3D80 valign=3Dtop style=
+=3D'width:60.0pt;padding:0in 0in 0in 30.0pt;height:13.5pt'><p class=3DMsoNo=
+rmal style=3D'line-height:15.0pt'><span style=3D'font-size:10.0pt;font-fami=
+ly:"Arial",sans-serif;color:#272727'><img border=3D0 width=3D40 height=3D18=
+ style=3D'width:.4166in;height:.1875in' id=3D"_x0000_i1026" src=3D"https://=
+brightwheel-4922e5bfba99.intercom-mail.com/assets/email/personal/triangle-8=
+747882e9ef8882f9bc057241fd3c049.png" alt=3DTriangle><o:p></o:p></span></p><=
+/td></tr></table></div></div><div align=3Dcenter><table class=3DMsoNormalTa=
+ble border=3D0 cellspacing=3D0 cellpadding=3D0 width=3D"100%" style=3D'widt=
+h:100.0%;border-collapse:collapse'><tr><td width=3D"100%" valign=3Dtop styl=
+e=3D'width:100.0%;padding:0in 0in 0in 0in'><p class=3DMsoNormal><img border=
+=3D0 id=3D"_x0000_i1027" src=3D"https://brightwheel-4922e5bfba99.intercom-m=
+ail.com/assets/email/personal/arrow-37f6774809df6fd083bfc98e9d562e23ca6ede6=
+18e2b5e10c042de88d2f858dd.png"><o:p></o:p></p></td></tr></table></div><p cl=
+ass=3DMsoNormal><span style=3D'display:none'><o:p>&nbsp;</o:p></span></p><d=
+iv align=3Dcenter><table class=3DMsoNormalTable border=3D0 cellspacing=3D0 =
+cellpadding=3D0 width=3D"100%" style=3D'width:100.0%;border-collapse:collap=
+se;max-width:100%'><tr><td style=3D'padding:0in 0in 0in 0in'></td></tr></ta=
+ble></div><p class=3DMsoNormal><o:p>&nbsp;</o:p></p><table class=3DMsoNorma=
+lTable border=3D0 cellspacing=3D0 cellpadding=3D0 width=3D"100%" style=3D'w=
+idth:100.0%;max-width:100%'><tr><td width=3D"75%" style=3D'width:75.0%;padd=
+ing:0in 0in 0in 0in'><table class=3DMsoNormalTable border=3D0 cellspacing=
+=3D0 cellpadding=3D0 width=3D"100%" style=3D'width:100.0%;border-collapse:c=
+ollapse'><tr><td width=3D40 style=3D'width:30.0pt;padding:0in 0in 0in 0in'>=
+<p class=3DMsoNormal style=3D'line-height:15.0pt'><span style=3D'font-size:=
+10.0pt;font-family:"Arial",sans-serif;color:#545454'>&nbsp;<o:p></o:p></spa=
+n></p></td><td width=3D50 style=3D'width:37.5pt;padding:0in 0in 0in 0in'><p=
+ class=3DMsoNormal style=3D'line-height:15.0pt'><span style=3D'font-size:10=
+.0pt;font-family:"Arial",sans-serif;color:#272727'><img border=3D0 width=3D=
+40 height=3D40 style=3D'width:.4166in;height:.4166in' id=3D"_x0000_i1028" s=
+rc=3D"https://brightwheel-4922e5bfba99.intercom-mail.com/avatars/1781170/sq=
+uare_128/LRG_DSC03910-1537568073.jpg?1537568073" alt=3Dintercomavatar><o:p>=
+</o:p></span></p></td><td style=3D'padding:0in 0in 0in 0in'><p class=3DMsoN=
+ormal style=3D'line-height:15.0pt'><b><span style=3D'font-size:10.0pt;font-=
+family:"Arial",sans-serif;color:#6F6F6F'>Claire</span></b><span style=3D'fo=
+nt-size:10.0pt;font-family:"Arial",sans-serif;color:#999999'> from brightwh=
+eel <o:p></o:p></span></p></td></tr></table></td><td width=3D"25%" style=3D=
+'width:25.0%;padding:0in 0in 0in 0in'><table class=3DMsoNormalTable border=
+=3D0 cellspacing=3D0 cellpadding=3D0 width=3D"100%" style=3D'width:100.0%;b=
+order-collapse:collapse;max-width:100%'><tr><td style=3D'padding:0in 0in 0i=
+n 0in'><p class=3DMsoNormal align=3Dright style=3D'text-align:right;line-he=
+ight:15.0pt'><span style=3D'font-size:8.5pt;font-family:"Arial",sans-serif;=
+color:#999999'><a href=3D"https://brightwheel-4922e5bfba99.intercom-mail.co=
+m/subscriptions/unsubscribe?app_id=3Dmbdwkcq4&amp;conversation_id=3D2309274=
+4736&amp;user_id=3D5b6ccc5b1e614f36080ea179"><span style=3D'color:#999999'>=
+Unsubscribe from our emails</span></a> <o:p></o:p></span></p></td></tr><tr>=
+<td style=3D'padding:0in 0in 0in 0in'></td></tr></table></td></tr></table><=
+p class=3DMsoNormal><span style=3D'font-size:11.0pt;font-family:"Calibri",s=
+ans-serif'><o:p></o:p></span></p></td></tr></table></td></tr><tr style=3D'h=
+eight:15.0pt'><td valign=3Dtop style=3D'padding:0in 0in 0in 0in;height:15.0=
+pt'></td></tr></table></td></tr></table></div><p class=3DMsoNormal><img bor=
+der=3D0 width=3D1 height=3D1 style=3D'width:.0104in;height:.0104in' id=3D"_=
+x0000_i1029" src=3D"https://brightwheel-4922e5bfba99.intercom-mail.com/via/=
+o?h=3D9ba32c6cdbd3f88764e01edd91da046d5c0782cc-23092744736" alt=3Dintercom>=
+<img border=3D0 width=3D1 height=3D1 style=3D'width:.0104in;height:.0104in'=
+ id=3D"_x0000_i1030" src=3D"https://brightwheel-4922e5bfba99.intercom-mail.=
+com/q/cocGcTSHiLeDpVQ6ES-G4A~~/AAAAAQA~/RgRfJcS0PlcIaW50ZXJjb21CCgAltD9DXYQ=
+YycJSGGt3LnR0bmV3Y2l0eUB2ZXJpem9uLm5ldFgEAAAKwg~~"><o:p></o:p></p></div></b=
+ody></html>
+------=_NextPart_002_011A_01D54946.189AE380--
+------=_NextPart_001_0119_01D54946.189AE380
 Content-Type: image/jpeg; name="image001.jpg"
-Content-Disposition: attachment; filename="image001.jpg"
 Content-Transfer-Encoding: base64
-Content-ID: <16c4eb3341c4ce8e92>
-X-Attachment-Id: 16c4eb3341c4ce8e92
+Content-ID: <image001.jpg@01D54946.1834A7A0>
 
 
---000000000000fd0dee058f136e69
-Content-Type: image/jpeg; name="image002.jpg"
-Content-Disposition: attachment; filename="image002.jpg"
+------=_NextPart_001_0119_01D54946.189AE380--
+------=_NextPart_000_0118_01D54946.189AE380
+Content-Type: application/vnd.openxmlformats-officedocument.wordprocessingml.document; name="Brightwheel works with all Android and iOS phones and tablets.docx"
 Content-Transfer-Encoding: base64
-Content-ID: <16c4eb3341c5b006a3>
-X-Attachment-Id: 16c4eb3341c5b006a3
+Content-Disposition: attachment; filename="Brightwheel works with all Android and iOS phones and tablets.docx"
 
 
---000000000000fd0dee058f136e69
-Content-Type: image/png; name="image003.png"
-Content-Disposition: attachment; filename="image003.png"
-Content-Transfer-Encoding: base64
-Content-ID: <16c4eb3341c692e334>
-X-Attachment-Id: 16c4eb3341c692e334
+------=_NextPart_000_0118_01D54946.189AE380--
 
-
---000000000000fd0dee058f136e69
-Content-Type: image/jpeg; name="image004.jpg"
-Content-Disposition: attachment; filename="image004.jpg"
-Content-Transfer-Encoding: base64
-Content-ID: <16c4eb3341c772f6c5>
-X-Attachment-Id: 16c4eb3341c772f6c5
-
-
---000000000000fd0dee058f136e69--
+Attachments area
