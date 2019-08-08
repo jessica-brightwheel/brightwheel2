@@ -1,0 +1,261 @@
+Original Message
+Message ID	<CAMAgWjra4=puTkWnnB+wYoupZR3=ES1Mk=OqRyL-cDf35D4Y+A@mail.gmail.com>
+Created at:	Thu, Aug 1, 2019 at 12:41 PM (Delivered after 12 seconds)
+From:	Claire Lee <claire@mybrightwheel.com>
+To:	Jessica Davison <jessica@mybrightwheel.com>
+Subject:	Fwd: ⚠️ Update: Please update your devices using TLS 1.0/1.1
+SPF:	PASS with IP 2607:f8b0:4864:20:0:0:0:e2b Learn more
+DKIM:	'PASS' with domain mybrightwheel-com.20150623.gappssmtp.com Learn more
+
+
+Download Original	Copy to clipboard	
+Delivered-To: jessica@mybrightwheel.com
+Received: by 2002:a67:e117:0:0:0:0:0 with SMTP id d23csp7966013vsl;
+        Thu, 1 Aug 2019 12:41:53 -0700 (PDT)
+X-Google-Smtp-Source: APXvYqw7R9OEGkcsMjTZLOJpwbUYIpqEOQtkf/iPWg4WXFVuSwKllCfmYA1HW8OZnM7iUJ+JnpSE
+X-Received: by 2002:a9f:3871:: with SMTP id q46mr85821610uad.50.1564688513634;
+        Thu, 01 Aug 2019 12:41:53 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1564688513; cv=none;
+        d=google.com; s=arc-20160816;
+        b=UaNuW1J7+lYoq5JcbCm6Xd8mN/W7tmWOgEFgwm6u5kBCgjIobubF1xtjxTOPOJfm38
+         ys0kISDrlFlOIZfcmUBWRqAw4PXvgrhhmSbp4Rnbl4NpatcYpIAGO+QtQCVmCmzXkxwK
+         J04byOTiJnfTkwe77B1Wvtew27RUoce9M2pcGWuBhJ5vy6Qp9jjXw+HlIN2s9vnEgJdz
+         SYPYMZ/GZ6QfV0YVhdAincrQ867IRETzf6OXYYS9qZNVOjMydhGfsVvcsEwHmbiKlggH
+         awgZciprPQ7p2uGcrynicUD2U9+3RWbkR1C8+aDKhOHgKJwdIokeP1x6IttxMLnYVKjX
+         jmAw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=cc:to:subject:message-id:date:from:in-reply-to:references
+         :mime-version:dkim-signature;
+        bh=EIW8mMgbWV3ivlsS3uPTTblRCEEPYaENZW4ltb1ll+o=;
+        b=d3nTyAztxxz3ui7VZ1nPZnbsGxblEE7ikjV4zTLzqRr4KwC8xzC11tMfxh0o1wwhe7
+         C2cjgu6eW4+6UevLMvDLEk/D9ULsqN0qghPkPQ/kaU1gFLkErWdK2V24yh/yJ7/U8fax
+         xAodlHVs+7s70hh3Rtd2mk3NfdLXBkGTRhtqtjuoR5ubBdOAXainAfPWYY1tmP4AQuxN
+         u9fXKD0arpLxmGK/0V9kQIio3GL85uSC/Ghbx6CLo3l5Yd5OhSeU1pXT1acp9iS0yaP7
+         H+rdCMbl97awPFRwt/OWVMX4Qyhk470GcNb3bN9Zg1cfZ7QQQfwKfuP2Z4wZ/w1IoWmk
+         1MNQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@mybrightwheel-com.20150623.gappssmtp.com header.s=20150623 header.b=UJtx830P;
+       spf=pass (google.com: domain of claire@mybrightwheel.com designates 2607:f8b0:4864:20::e2b as permitted sender) smtp.mailfrom=claire@mybrightwheel.com
+Return-Path: <claire@mybrightwheel.com>
+Received: from mail-vs1-xe2b.google.com (mail-vs1-xe2b.google.com. [2607:f8b0:4864:20::e2b])
+        by mx.google.com with ESMTPS id w2si15746359uag.160.2019.08.01.12.41.53
+        for <jessica@mybrightwheel.com>
+        (version=TLS1_3 cipher=AEAD-AES128-GCM-SHA256 bits=128/128);
+        Thu, 01 Aug 2019 12:41:53 -0700 (PDT)
+Received-SPF: pass (google.com: domain of claire@mybrightwheel.com designates 2607:f8b0:4864:20::e2b as permitted sender) client-ip=2607:f8b0:4864:20::e2b;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@mybrightwheel-com.20150623.gappssmtp.com header.s=20150623 header.b=UJtx830P;
+       spf=pass (google.com: domain of claire@mybrightwheel.com designates 2607:f8b0:4864:20::e2b as permitted sender) smtp.mailfrom=claire@mybrightwheel.com
+Received: by mail-vs1-xe2b.google.com with SMTP id m23so49740209vso.1
+        for <jessica@mybrightwheel.com>; Thu, 01 Aug 2019 12:41:53 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=mybrightwheel-com.20150623.gappssmtp.com; s=20150623;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to
+         :cc;
+        bh=EIW8mMgbWV3ivlsS3uPTTblRCEEPYaENZW4ltb1ll+o=;
+        b=UJtx830Pj2g+v7GmjxyWEUlaEwWEJLgxqslRXEyYcCUwH0ZRHJgSOYttlPxaKsBCK1
+         IhlM2OiS+NtAC0J5HJx7Cn7pDSAxY8QLD97hmXSFS7AFYRbJEnQdeCEAzEiPoWxzVgpK
+         d3WzsMNVYwD/DyWeq4/qvXzisGmFVmCtjbaS3Do/cYX2BzQSMjknp/hEPUXRnSLsh0rV
+         wVvWZsIBrj1RF1eHWcMiiyBhE80Lk9ZX/TqpiSb/T/ptf9ps4Dh6RpVYWgnlOd8WyzPM
+         QGagfmzKRn7sSNPPLqQ1n6/qVsQ4+urxGqEfG+oUddcNCW1PXbp1cBAvz9pKesJ9C/hD
+         rVdw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to:cc;
+        bh=EIW8mMgbWV3ivlsS3uPTTblRCEEPYaENZW4ltb1ll+o=;
+        b=SFoHbhjNFAPcPzEdmcPgsCnuk/PsZpJAr7ERBLyC0HEKfeOH48lcTTIiFB2tT5wJ8f
+         A9DMkpFcnf1A9WI5D8WWy1g6XZv0KVv4M+OqCiaJbd8t1CcsCxZfQFjWvII5t3bFBZgQ
+         H0LZdoMLxEB85Pb5mYkKOiLpMrtY1xDIEo5GnSpLAhr3v3yQ3CH0WNSjdnrgxqUgdhO0
+         Bfw4rVko6UC5IKu8xUpRnQ9PupFcpV5JTCJe3uQbpQG1XX4HU7HHrZ56576oIOgyFTVv
+         V2r6GCeiK8nqkgCsTHCrF3N/snYDUATk5JMqmCtNXxq49P++ooDt86mIRQhUJVMcZCFK
+         jExQ==
+X-Gm-Message-State: APjAAAVmGva/e/63MJWQecq29iLjKs12B2sFykEAujqCLBDBYzrxJ9ft bw6fMQvB+dZprzQVvKmsg8hQtexu3cVJv9Cc111ZnuhoWTI=
+X-Received: by 2002:a67:dd85:: with SMTP id i5mr82684398vsk.220.1564688512758; Thu, 01 Aug 2019 12:41:52 -0700 (PDT)
+MIME-Version: 1.0
+References: <00a601d548a0$c98cc1f0$5ca645d0$@milestonescdc.com>
+In-Reply-To: <00a601d548a0$c98cc1f0$5ca645d0$@milestonescdc.com>
+From: Claire Lee <claire@mybrightwheel.com>
+Date: Thu, 1 Aug 2019 12:41:41 -0700
+Message-ID: <CAMAgWjra4=puTkWnnB+wYoupZR3=ES1Mk=OqRyL-cDf35D4Y+A@mail.gmail.com>
+Subject: Fwd: ⚠️ Update: Please update your devices using TLS 1.0/1.1
+To: Jessica Davison <jessica@mybrightwheel.com>
+Cc: Natalie Foote <natalie@mybrightwheel.com>
+Content-Type: multipart/mixed; boundary="000000000000fd0dee058f136e69"
+
+--000000000000fd0dee058f136e69
+Content-Type: multipart/alternative; boundary="000000000000fd0deb058f136e67"
+
+--000000000000fd0deb058f136e67
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hey Jessie! This automated reply was sent to my email,
+claire@mybrightwheel.com. Is there a way to ensure replies are sent to
+support@?
+
+---------- Forwarded message ---------
+From: Danielle Kuczajda <dkuczajda@milestonescdc.com>
+Date: Thu, Aug 1, 2019 at 12:39 PM
+Subject: RE: =E2=9A=A0=EF=B8=8F Update: Please update your devices using TL=
+S 1.0/1.1
+To: <claire@mybrightwheel.com>
+
+
+Hello and thank you for your email,
+            I am currently out of the office on maternity leave and plan on
+returning October 14th. While I=E2=80=99m gone you=E2=80=99ll be seeing muc=
+h more of our
+former Program Directors, Jenny Abid and Kelly Mertes. You will also notice
+some of the teachers stepping into the office a couple nights a week to hel=
+p
+out.
+While I=E2=80=99m gone if you have center specific questions, please call t=
+he
+center or contact Ashley at atelman@milestonescdc.com
+<mailto:atelman@milestonescdc.com>  or Teresa at thauck@milestonescdc.com
+<mailto:thauck@milestonescdc.com> . For questions regarding billing,
+transitions, or enrollment please contact Kelly Mertes at
+kmertes@milestonescdc.com <mailto:kmertes@milestonescdc.com> .
+
+I look forward to seeing everyone when I return.
+Thank you,
+Danielle Kuczajda
+
+Assistant Director
+Milestones Child Development Center - Belmont
+Phone: 616.361.0191 ext. 12
+Fax: 616.361.0269
+E-mail:  <mailto:dkuczajda@milestonescdc.com> dkuczajda@milestonescdc.com
+
+<https://www.facebook.com/Milestones-Child-Development-Center-1808530986567=
+6
+1/?fref=3Dts
+<https://www.facebook.com/Milestones-Child-Development-Center-1808530986567=
+61/?fref=3Dts>>
+  <https://twitter.com/milestones_kids>
+
+
+
+--=20
+
+Claire Lee
+
+<https://mybrightwheel.com/>
+
+--000000000000fd0deb058f136e67
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hey Jessie! This automated reply was sent to my email, <a =
+href=3D"mailto:claire@mybrightwheel.com">claire@mybrightwheel.com</a>. Is t=
+here a way to ensure replies are sent to support@?<br><br><div class=3D"gma=
+il_quote"><div dir=3D"ltr" class=3D"gmail_attr">---------- Forwarded messag=
+e ---------<br>From: <strong class=3D"gmail_sendername" dir=3D"auto">Daniel=
+le Kuczajda</strong> <span dir=3D"auto">&lt;<a href=3D"mailto:dkuczajda@mil=
+estonescdc.com">dkuczajda@milestonescdc.com</a>&gt;</span><br>Date: Thu, Au=
+g 1, 2019 at 12:39 PM<br>Subject: RE: =E2=9A=A0=EF=B8=8F Update: Please upd=
+ate your devices using TLS 1.0/1.1<br>To:  &lt;<a href=3D"mailto:claire@myb=
+rightwheel.com">claire@mybrightwheel.com</a>&gt;<br></div><br><br>Hello and=
+ thank you for your email,<br>
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 I am currently out of the office =
+on maternity leave and plan on<br>
+returning October 14th. While I=E2=80=99m gone you=E2=80=99ll be seeing muc=
+h more of our<br>
+former Program Directors, Jenny Abid and Kelly Mertes. You will also notice=
+<br>
+some of the teachers stepping into the office a couple nights a week to hel=
+p<br>
+out.<br>
+While I=E2=80=99m gone if you have center specific questions, please call t=
+he<br>
+center or contact Ashley at <a href=3D"mailto:atelman@milestonescdc.com" ta=
+rget=3D"_blank">atelman@milestonescdc.com</a><br>
+&lt;mailto:<a href=3D"mailto:atelman@milestonescdc.com" target=3D"_blank">a=
+telman@milestonescdc.com</a>&gt;=C2=A0 or Teresa at <a href=3D"mailto:thauc=
+k@milestonescdc.com" target=3D"_blank">thauck@milestonescdc.com</a><br>
+&lt;mailto:<a href=3D"mailto:thauck@milestonescdc.com" target=3D"_blank">th=
+auck@milestonescdc.com</a>&gt; . For questions regarding billing,<br>
+transitions, or enrollment please contact Kelly Mertes at<br>
+<a href=3D"mailto:kmertes@milestonescdc.com" target=3D"_blank">kmertes@mile=
+stonescdc.com</a> &lt;mailto:<a href=3D"mailto:kmertes@milestonescdc.com" t=
+arget=3D"_blank">kmertes@milestonescdc.com</a>&gt; . <br>
+<br>
+I look forward to seeing everyone when I return.<br>
+Thank you,<br>
+Danielle Kuczajda<br>
+<br>
+Assistant Director<br>
+Milestones Child Development Center - Belmont<br>
+Phone: 616.361.0191 ext. 12<br>
+Fax: 616.361.0269<br>
+E-mail:=C2=A0 &lt;mailto:<a href=3D"mailto:dkuczajda@milestonescdc.com" tar=
+get=3D"_blank">dkuczajda@milestonescdc.com</a>&gt; <a href=3D"mailto:dkucza=
+jda@milestonescdc.com" target=3D"_blank">dkuczajda@milestonescdc.com</a> <b=
+r>
+<br>
+&lt;<a href=3D"https://www.facebook.com/Milestones-Child-Development-Center=
+-180853098656761/?fref=3Dts" rel=3D"noreferrer" target=3D"_blank">https://w=
+ww.facebook.com/Milestones-Child-Development-Center-18085309865676<br>
+1/?fref=3Dts</a>&gt;=C2=A0 =C2=A0 &lt;<a href=3D"https://twitter.com/milest=
+ones_kids" rel=3D"noreferrer" target=3D"_blank">https://twitter.com/milesto=
+nes_kids</a>&gt; <br>
+<br>
+</div><br clear=3D"all"><div><br></div>-- <br><div dir=3D"ltr" class=3D"gma=
+il_signature" data-smartmail=3D"gmail_signature"><div dir=3D"ltr"><div><div=
+ dir=3D"ltr"><div><div dir=3D"ltr"><div dir=3D"ltr"><span><p dir=3D"ltr" st=
+yle=3D"line-height:1.656;margin-top:0pt;margin-bottom:0pt"><span style=3D"f=
+ont-size:11pt;font-family:Avenir;color:rgb(68,68,68);background-color:trans=
+parent;font-weight:700;vertical-align:baseline;white-space:pre-wrap">Claire=
+ Lee</span></p><p dir=3D"ltr" style=3D"line-height:1.38;margin-top:0pt;marg=
+in-bottom:0pt"><span style=3D"font-size:12pt;font-family:Avenir;color:rgb(1=
+7,85,204);background-color:transparent;vertical-align:baseline;white-space:=
+pre-wrap"><a href=3D"https://mybrightwheel.com/" target=3D"_blank"><img src=
+=3D"https://lh6.googleusercontent.com/NKH1QkaDAu0MwXJAI90e7qf8dHpejoc4PLICJ=
+POPCu-JgUALchzfqpTGdw4o-_Kh5r7vH1KPVdE5_8ZI--LZZPT7-Gd2rBlk1lI0aaFshOhcCayO=
+4nDI-GtFFarGwLSIGp6WrC8O" width=3D"149" height=3D"35" style=3D"border:none"=
+></a></span></p><div><br></div></span></div></div></div></div></div></div><=
+/div></div>
+
+--000000000000fd0deb058f136e67--
+--000000000000fd0dee058f136e69
+Content-Type: application/octet-stream; name=noname
+Content-Disposition: attachment; filename=noname
+Content-Transfer-Encoding: base64
+Content-ID: <16c4eb3341cc204bfcc1>
+X-Attachment-Id: 16c4eb3341cc204bfcc1
+
+
+--000000000000fd0dee058f136e69
+Content-Type: image/jpeg; name="image001.jpg"
+Content-Disposition: attachment; filename="image001.jpg"
+Content-Transfer-Encoding: base64
+Content-ID: <16c4eb3341c4ce8e92>
+X-Attachment-Id: 16c4eb3341c4ce8e92
+
+
+--000000000000fd0dee058f136e69
+Content-Type: image/jpeg; name="image002.jpg"
+Content-Disposition: attachment; filename="image002.jpg"
+Content-Transfer-Encoding: base64
+Content-ID: <16c4eb3341c5b006a3>
+X-Attachment-Id: 16c4eb3341c5b006a3
+
+
+--000000000000fd0dee058f136e69
+Content-Type: image/png; name="image003.png"
+Content-Disposition: attachment; filename="image003.png"
+Content-Transfer-Encoding: base64
+Content-ID: <16c4eb3341c692e334>
+X-Attachment-Id: 16c4eb3341c692e334
+
+
+--000000000000fd0dee058f136e69
+Content-Type: image/jpeg; name="image004.jpg"
+Content-Disposition: attachment; filename="image004.jpg"
+Content-Transfer-Encoding: base64
+Content-ID: <16c4eb3341c772f6c5>
+X-Attachment-Id: 16c4eb3341c772f6c5
+
+
+--000000000000fd0dee058f136e69--
